@@ -5,9 +5,8 @@ import seaborn as sns
 import streamlit as st
 from scipy import stats
 import mplcyberpunk 
-from abc import abstractmethod
 import yaml
-
+from abc import ABC,abstractmethod
        
 with open('params.yaml','r') as f:
     yaml_file = yaml.safe_load(f)['distribution']
@@ -19,7 +18,7 @@ def statistical_analysis():
         if st.button('About statistical libraries in python'):
             statistic.description_analysis()
 
-class Statistic:
+class Statistic():
     def __init__(self):
         plt.style.use('cyberpunk')
     
@@ -54,9 +53,13 @@ class Statistic:
             case 'Binomial':
                   Binomial.create_random_data(self)
 
-    @abstractmethod
+ 
     def create_random_data(self):
        '''Create distribution'''
+       pass
+       
+        
+
 
 class Guassian(Statistic):
     def __init__(self):
@@ -240,7 +243,7 @@ class Binomial(Statistic):
             st.pyplot(fig=fig,use_container_width=False)
 
 
-class Statistic_analysis:
+class Statistic_analysis(ABC):
     def __init__(self):
           pass
 
@@ -250,10 +253,12 @@ class Statistic_analysis:
 
 
 class Onettest(Statistic_analysis):
-     def __init__(self):
-          pass
+     def __init__(self,data):
+          self.data = data
+
      def statistical_test(self):
-          pass
+          mean  = st.number_input('',1,2)
+          ttest_onesample = stats.ttest_1samp(a=self.data,mean=mean)
 
 
 
