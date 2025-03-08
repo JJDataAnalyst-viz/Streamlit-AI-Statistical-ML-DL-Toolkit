@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+plotly[express]
+seaborn
+bokeh
+streamlit
+scipy
+statsmodels
+pingouin
+pymc
+mplcyberpunk
+pyyaml
