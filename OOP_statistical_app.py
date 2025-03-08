@@ -253,7 +253,7 @@ class Onettest(Statistic_analysis):
      def __init__(self):
           pass
      def statistical_test(self):
-          
+          pass
 
 
 
