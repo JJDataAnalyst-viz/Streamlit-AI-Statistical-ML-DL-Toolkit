@@ -1,16 +1,18 @@
 import streamlit as st
-
+from utils.generate_data import GenerateData,Iris
 def home():
     st.title("Statistical Analysis & Machine Learning App")
 
-    # Welcome message
+    obj = Iris(path='https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data')
+    st.dataframe(obj.make_data())
+
     st.markdown("""
         Welcome to the **Statistical Analysis & ML/DL Toolkit**.
         This app provides tools for performing various **statistical tests**, analyzing **distributions**, and implementing **machine learning** and **deep learning models**.
         Whether you are working with hypothesis testing or exploring predictive models, this app has you covered.
     """)
 
-    # Key Features Section
+
     st.header("🔬 Key Features")
 
     st.markdown("""
@@ -42,7 +44,7 @@ def home():
         - **Recurrent Neural Networks (RNN)**
     """)
 
-    # How it Works Section
+   
     st.header("📈 How It Works")
     st.markdown("""
     1. **Select Your Test/Model**  
@@ -58,35 +60,35 @@ def home():
     View interactive visualizations for distributions, test results, and model performance.
     """)
 
-    # Key Tests and Models Section
+
     st.header("🔎 Key Statistical Tests & Models")
 
-    # Shapiro-Wilk Test
+
     st.subheader("1. Shapiro-Wilk Test")
     st.markdown("""
         Used for testing the normality of your dataset. It returns a p-value to determine if the data follows a normal distribution.
     """)
 
-    # T-test
+
     st.subheader("2. T-test")
     st.markdown("""
         Compares the means of two independent groups to determine if there is a significant difference between them.
     """)
 
-    # ANOVA
+
     st.subheader("3. ANOVA (Analysis of Variance)")
     st.markdown("""
         Used to test for significant differences between three or more groups or variables.
     """)
 
-    # Distributions
+
     st.subheader("4. Distributions")
     st.markdown("""
         Explore and analyze the characteristics of various statistical distributions like:
         - Normal, Binomial, Poisson, etc.
     """)
 
-    # Machine Learning Models
+
     st.subheader("5. Machine Learning Models")
     st.markdown("""
         Run and evaluate machine learning models to make predictions or classify data:
@@ -95,7 +97,7 @@ def home():
         - **Random Forest** and **Decision Trees** for classification tasks.
     """)
 
-    # Deep Learning Models
+  
     st.subheader("6. Deep Learning Models")
     st.markdown("""
         Explore deep learning models for advanced tasks:
@@ -104,7 +106,7 @@ def home():
         - **Recurrent Neural Networks (RNN)**: Perfect for sequential data (e.g., time series).
     """)
 
-    # Visualizations Section
+
     st.header("📊 Visualizations")
 
     st.markdown("""
@@ -118,7 +120,7 @@ def home():
     Analyze model accuracy, loss curves, confusion matrices, and more.
     """)
 
-    # Tools & Technologies Section
+
     st.header("🛠️ Tools & Technologies")
 
     st.markdown("""
@@ -127,13 +129,13 @@ def home():
     - **Deployment**: Docker, Heroku (or your preferred cloud platform)
     """)
 
-    # Help Section
+
     st.header("❓ Need Help?")
     st.markdown("""
     If you encounter any issues or need help with the app, feel free to reach out via our support Slack channel or check out the **FAQ section**.
     """)
 
-    # GitHub Section
+
     st.header("⭐ Star the Project on GitHub")
     st.markdown("""
     If you find this app useful, give it a star on GitHub to support the development!
