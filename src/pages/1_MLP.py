@@ -1,5 +1,6 @@
 import numpy as np
 from sklearn.datasets import make_classification
+import streamlit as st
 class Perceptron:
     '''
     Classificator -- Perceptron
@@ -44,3 +45,10 @@ class Perceptron:
         return np.where(self.net_input(X) >= 0,1,-1)
 
 
+data = make_classification(n_samples=1000,n_features=4)
+
+X = data[0]
+y = data[1]
+
+st.write(X)
+st.write(y)
