@@ -1,6 +1,10 @@
 import numpy as np
 from sklearn.datasets import make_classification
+from sklearn.metrics import accuracy_score
 import streamlit as st
+
+st.set_page_config(page_title="MLP", page_icon=":bar_chart:", layout="wide")
+
 class Perceptron:
     '''
     Classificator -- Perceptron
@@ -45,10 +49,25 @@ class Perceptron:
         return np.where(self.net_input(X) >= 0,1,-1)
 
 
-data = make_classification(n_samples=1000,n_features=4)
 
-X = data[0]
-y = data[1]
 
-st.write(X)
-st.write(y)
+
+class MLP_Pred:
+        col1,col2 = st.columns(2)
+
+        with col1:
+            data = make_classification(n_samples=1000,n_features=4)
+            X = data[0]
+            y = np.where(data[1] == 0,-1,1)
+            
+            st.write(X)
+        with col2:
+            st.write(y)
+
+        perceptron = Perceptron()
+        perceptron.fit(X,y)
+        predicted = perceptron.predict(X)
+        st.write(accuracy_score(y,predicted))
+
+if __name__ == "__main__":
+     obj = MLP_Pred()
