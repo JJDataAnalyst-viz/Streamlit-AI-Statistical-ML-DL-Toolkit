@@ -11,3 +11,5 @@ pingouin
 pymc
 mplcyberpunk
 pyyaml
+mysql-connector
+python-dotenv
