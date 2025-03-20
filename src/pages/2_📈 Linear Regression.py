@@ -18,7 +18,7 @@ from sklearn.decomposition import PCA
 
 
 plt.style.use("cyberpunk")
-
+st.set_page_config(page_title='Linear Regression',layout="wide",page_icon="📈")
 class LinearRegression_model:
 
     '''

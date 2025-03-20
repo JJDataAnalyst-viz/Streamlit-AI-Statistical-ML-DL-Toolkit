@@ -3,7 +3,7 @@ from sklearn.datasets import make_classification
 from sklearn.metrics import accuracy_score
 import streamlit as st
 
-st.set_page_config(page_title="MLP", page_icon=":bar_chart:", layout="wide")
+st.set_page_config(page_title=" Multi Layer Perceptron", page_icon="🧠", layout="wide")
 
 class Perceptron:
     '''

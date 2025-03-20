@@ -12,6 +12,8 @@ import pandas as pd
 # Scikit-learn
 
 
+st.set_page_config(page_title='Classification problem',page_icon='🎯')
+
 
 
 st.title("Road Accident Survival Dataset")
