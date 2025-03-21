@@ -1,10 +1,5 @@
 import streamlit as st
-from utils.generate_data import GenerateData,Iris
-from PIL import Image
-import io
-import base64
-
-
+from components.utils.generate_data import GenerateData,Iris
 def home():
     st.title("Statistical Analysis & Machine Learning App")
 

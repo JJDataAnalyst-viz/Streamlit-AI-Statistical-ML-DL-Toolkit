@@ -53,21 +53,26 @@ class Perceptron:
 
 
 class MLP_Pred:
-        col1,col2 = st.columns(2)
 
-        with col1:
-            data = make_classification(n_samples=1000,n_features=4)
-            X = data[0]
-            y = np.where(data[1] == 0,-1,1)
-            
-            st.write(X)
-        with col2:
-            st.write(y)
+        tabs1,tabs2 = st.tabs(['Data','Prediction'])
+        with tabs1:
+            col1,col2 = st.columns(2)
 
-        perceptron = Perceptron()
-        perceptron.fit(X,y)
-        predicted = perceptron.predict(X)
-        st.write(accuracy_score(y,predicted))
+            with col1:
+                data = make_classification(n_samples=1000,n_features=4)
+                X = data[0]
+                y = np.where(data[1] == 0,-1,1)
+                
+                st.write(X)
+            with col2:
+                st.write(y)
+
+            perceptron = Perceptron()
+            perceptron.fit(X,y)
+            predicted = perceptron.predict(X)
+            st.write(accuracy_score(y,predicted))
+        with tabs2:
+            st.write('Hello')
 
 if __name__ == "__main__":
      obj = MLP_Pred()

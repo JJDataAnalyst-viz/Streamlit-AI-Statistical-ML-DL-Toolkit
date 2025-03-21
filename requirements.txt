@@ -13,4 +13,9 @@ mplcyberpunk
 pyyaml
 mysql-connector
 python-dotenv
+<<<<<<< HEAD
 st_pages
+=======
+xgboost
+streamlit_extras
+>>>>>>> utils
