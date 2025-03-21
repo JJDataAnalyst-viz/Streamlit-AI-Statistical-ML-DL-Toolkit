@@ -13,3 +13,5 @@ mplcyberpunk
 pyyaml
 mysql-connector
 python-dotenv
+xgboost
+streamlit_extras
