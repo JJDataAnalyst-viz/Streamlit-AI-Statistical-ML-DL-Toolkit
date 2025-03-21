@@ -5,7 +5,17 @@ import base64
 from OOP_statistical_app import *
 from home_app import home
 from about_app import about
+import yaml
 
+
+with open('params.yaml') as f:
+    params = yaml.safe_load(f)
+    
+    
+
+
+
+st.set_page_config(page_title='Home',page_icon='🏡',**params['page_config'])
 
 file = open("assets/Home.png", "rb")
 contents = file.read()

@@ -8,3 +8,8 @@ distribution :
 
 iris_dataset:
   path : 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
+
+
+page_config:
+  layout : 'wide'
+  initial_sidebar_state : "expanded"
