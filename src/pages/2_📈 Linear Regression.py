@@ -15,10 +15,13 @@ import plotly.graph_objects as go
 import plotly.express as px
 from scipy import stats
 from sklearn.decomposition import PCA
+from components.utils import avatar_func,links
 
 
 plt.style.use("cyberpunk")
 st.set_page_config(page_title='Linear Regression',layout="wide",page_icon="📈")
+avatar_func()
+links()
 class LinearRegression_model:
 
     '''

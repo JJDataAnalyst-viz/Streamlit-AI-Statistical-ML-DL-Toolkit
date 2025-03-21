@@ -3,7 +3,7 @@
 # ------------------------------
 import yaml
 import random
-from components.utils.utils import avatar_func,rain_func,links
+from components.utils import avatar_func,rain_func,links
 
 # ------------------------------
 # Modules for Connection to DB

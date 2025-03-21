@@ -2,9 +2,10 @@ import numpy as np
 from sklearn.datasets import make_classification
 from sklearn.metrics import accuracy_score
 import streamlit as st
-
+from components.utils import avatar_func,links
 st.set_page_config(page_title=" Multi Layer Perceptron", page_icon="🧠", layout="wide")
-
+avatar_func()
+links()
 class Perceptron:
     '''
     Classificator -- Perceptron
