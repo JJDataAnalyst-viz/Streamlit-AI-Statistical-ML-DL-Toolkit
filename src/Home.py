@@ -11,11 +11,8 @@ import yaml
 with open('params.yaml') as f:
     params = yaml.safe_load(f)
     
-    
 
-
-
-st.set_page_config(page_title='Home',page_icon='🏡',**params['page_config'])
+st.set_page_config(page_title='Home',page_icon='🏡',**params['page_config'] ) # Add versioning
 
 file = open("assets/Home.png", "rb")
 contents = file.read()
