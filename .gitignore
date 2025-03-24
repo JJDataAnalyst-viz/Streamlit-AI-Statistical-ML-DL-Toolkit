@@ -1,4 +1,8 @@
 /venv
 __pycache__
+<<<<<<< HEAD
 test.ipynb
 .env
+=======
+test.ipynb
+>>>>>>> 680be65430c8aa8b1a68200e2bcc59d4833bbb32

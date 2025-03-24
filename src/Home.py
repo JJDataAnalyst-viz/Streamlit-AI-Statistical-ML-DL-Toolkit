@@ -1,4 +1,5 @@
 import streamlit as st
+<<<<<<< HEAD
 from PIL import Image
 import io
 import base64
@@ -38,6 +39,7 @@ st.markdown(
         """,
         unsafe_allow_html=True,
     )
+
 def main():
 
     menu = ['Home','Statistical analysis','About']

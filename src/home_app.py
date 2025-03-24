@@ -1,5 +1,9 @@
 import streamlit as st
+<<<<<<< HEAD
 from components.utils.generate_data import GenerateData,Iris
+=======
+from utils.generate_data import GenerateData,Iris
+>>>>>>> 680be65430c8aa8b1a68200e2bcc59d4833bbb32
 def home():
     st.title("Statistical Analysis & Machine Learning App")
 

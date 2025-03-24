@@ -10,9 +10,13 @@ statsmodels
 pingouin
 pymc
 mplcyberpunk
+<<<<<<< HEAD
 pyyaml
 mysql-connector
 python-dotenv
 st_pages
 xgboost
 streamlit_extras
+=======
+pyyaml
+>>>>>>> 680be65430c8aa8b1a68200e2bcc59d4833bbb32
