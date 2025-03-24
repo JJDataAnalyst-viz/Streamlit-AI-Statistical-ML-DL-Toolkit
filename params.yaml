@@ -5,7 +5,6 @@ distribution :
   color_exponential: '#add11b'
   color_binomial: '#d1461b'
 
-
 iris_dataset:
   path : 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
 
@@ -13,3 +12,5 @@ iris_dataset:
 page_config:
   layout : 'wide'
   initial_sidebar_state : "expanded"
+
+
