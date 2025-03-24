@@ -1,0 +1,15 @@
+distribution :
+  color_gaussian : '#42ecf5'
+  color_uniform : '#133de8'
+  color_lognormal: '#d11b85'
+  color_exponential: '#add11b'
+  color_binomial: '#d1461b'
+
+
+iris_dataset:
+  path : 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
+
+
+page_config:
+  layout : 'wide'
+  initial_sidebar_state : "expanded"
